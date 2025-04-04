@@ -1,0 +1,9 @@
+<p>courses works!</p>
+<h2>Our Courses</h2>
+<ul>
+  <li *ngFor="let course of courses">
+    <h3>{{ course.name }}</h3>
+    <p>{{ course.description }}</p>
+    <a [routerLink]="['/course', course.id]">View Details</a>
+  </li>
+</ul>
